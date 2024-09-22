@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(37, 37, 37);
+    margin: 0px;
+}
+
+.containner {
+    display: flex;
+}
+
+.column1, .column2, .column3 {
+    flex: 1;
+    float: inline-start;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 0px;
+}
+
+canvas {
+    border: 1px solid #000;
+    margin-top: 10px;
+}
+
+#pdf-viewer {
+    text-align: center;
+    margin: 20px;
+    margin-top: 0px;
+}
+
+#prev-page {
+    margin-right: 15%;
+}
+
+#next-page {
+    margin-left: 15%;
+}
