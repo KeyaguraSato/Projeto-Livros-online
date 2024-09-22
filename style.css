@@ -1,0 +1,63 @@
+body {
+    background-color: rgb(37, 37, 37);
+    margin: 0px;
+}
+
+.title {
+    background-color: black; 
+    margin: 0px; 
+    margin-top: -21.8px;
+}
+
+.wth {
+    color: rgb(199, 198, 198);
+    text-align: center;
+}
+
+.pai-column {
+    width: 50%;
+    float: inline-start;
+    margin-top: -20px;
+}
+
+.column {
+    border: solid rgb(37, 37, 37);
+    width: 100%;
+    background-color: rgb(17, 17, 17); 
+    box-sizing: border-box;
+}
+
+.space {
+    float: inline-start;
+    width: 48%;
+    margin: 0.691%;
+    border: 1px solid black;
+}
+
+.gallery {
+    margin: 5px;
+    border: 3px solid #000000;
+}
+  
+.gallery:hover {
+    border: 3px solid #000000;
+}
+  
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+  
+.desc {
+    padding: 10px;
+    text-align: center;
+    background-color: #3b3b3b;
+    color: white;
+}
+
+.times {
+    border: 1px solid black; 
+    margin: 0.691%; 
+    margin-bottom: 3.14%;
+    background-color: #3b3b3b;
+}
