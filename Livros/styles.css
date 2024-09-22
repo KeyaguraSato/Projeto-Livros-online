@@ -1,9 +1,15 @@
-#pdf-viewer {
-    text-align: center;
-    margin: 20px;
+body {
+    background-color: rgb(37, 37, 37);
+    margin: 0px;
 }
 
 canvas {
     border: 1px solid #000;
     margin-top: 10px;
 }
+
+#pdf-viewer {
+    text-align: center;
+    margin: 20px;
+}
+
