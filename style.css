@@ -61,3 +61,8 @@ body {
     margin-bottom: 3.14%;
     background-color: #3b3b3b;
 }
+
+.btn {
+    border: transparent;
+    background: transparent;
+}

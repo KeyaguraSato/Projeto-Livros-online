@@ -1,0 +1,57 @@
+body {
+    background-color: rgb(37, 37, 37);
+    margin: 0px;
+}
+
+.containner {
+    display: flex;
+}
+
+.column1, .column2, .column3 {
+    flex: 1;
+    float: inline-start;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 0px;
+}
+
+canvas {
+    border: 1px solid #000;
+    margin-top: 10px;
+}
+
+#pdf-viewer {
+    text-align: center;
+    margin: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#prev-page {
+    margin-right: 15%;
+}
+
+#next-page {
+    margin-left: 15%;
+}
+
+.times {
+    border: 1px solid black; 
+    margin: 0.691%; 
+    margin-bottom: 3.14%;
+    background-color: #3b3b3b;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.wth {
+    color: rgb(199, 198, 198);
+    text-align: center;
+    padding-top: 10px;
+}
+
+#page-info {
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding: 0px;
+}
