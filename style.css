@@ -63,6 +63,6 @@ body {
 }
 
 .btn {
-    border: transparent;
-    background-color: #3b3b3b;
+    border: #3b3b3b;
+    background-color: transparent;
 }
