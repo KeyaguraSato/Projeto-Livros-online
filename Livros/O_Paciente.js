@@ -22,12 +22,20 @@ const renderPage = (num) => {
 const loadPdf = async () => {
     pdfDoc = await pdfjsLib.getDocument(url).promise;
     renderPage(currentPage);
+    updatePageInfo();
+};
+
+const updatePageInfo = () => {
+    const pageInfo = document.getElementById('page-info');
+    pageInfo.textContent = `Página ${currentPage} de ${pdfDoc.numPages}`;
 };
 
 document.getElementById('prev-page').addEventListener('click', () => {
     if (currentPage > 1) {
         currentPage--;
         renderPage(currentPage);
+        updatePageInfo();
+        window.scrollTo(0, 0);
     }
 });
 
@@ -35,6 +43,8 @@ document.getElementById('next-page').addEventListener('click', () => {
     if (currentPage < pdfDoc.numPages) {
         currentPage++;
         renderPage(currentPage);
+        updatePageInfo();
+        window.scrollTo(0, 0);
     }
 });
 
