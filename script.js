@@ -15,21 +15,22 @@ const updateTotalTimeDisplay = () => {
     const formattedTime1 = formatTime(totalActiveTime1);
     const formattedTime2 = formatTime(totalActiveTime2);
     
-    document.getElementById('total-time-info').textContent = `Tempo total: ${formattedTime1}`;
-    document.getElementById('total-time-info-livro2').textContent = `Tempo total: ${formattedTime2}`;
+    document.getElementById('total-time-info').textContent = `Tempo lido: ${formattedTime1}`;
+    document.getElementById('total-time-info-livro2').textContent = `Tempo lido: ${formattedTime2}`;
+
+    const totalActiveTime = totalActiveTime1 + totalActiveTime2;
+    document.querySelector('.times span').textContent = formatTime(totalActiveTime);
 };
 
 document.addEventListener('DOMContentLoaded', updateTotalTimeDisplay);
 
 const resetTimes = () => {
     localStorage.removeItem('totalActiveTime');
-    localStorage.removeItem('lastSessionTime');
     updateTotalTimeDisplay();
 };
 
 const resetTimesLivro2 = () => {
     localStorage.removeItem('livro2_totalActiveTime');
-    localStorage.removeItem('livro2_lastSessionTime');
     updateTotalTimeDisplay();
 };
 
